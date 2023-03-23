@@ -1,5 +1,5 @@
 const NUM_ROWS = 30;
-const NUM_COLS = 30;
+const NUM_COLS = 45;
 const TICK_MS = 500;
 var myInterval = 0;
 
