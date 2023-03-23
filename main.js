@@ -1,6 +1,6 @@
 const NUM_ROWS = 30;
 const NUM_COLS = 45;
-const TICK_MS = 500;
+const TICK_MS = 50;
 var myInterval = 0;
 
 let gameRunning = 0;

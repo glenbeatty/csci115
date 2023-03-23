@@ -3,8 +3,9 @@ function update(){
     let i = 0;
 
     while(i<activeCells.length){
-        console.log(activeCells[i].toString());
-        document.getElementById(activeCells[i].toString()).style.backgroundColor = "lightblue"; 
+        if((activeCells[i].x>-1)&&(activeCells[i].x<NUM_ROWS)&&(activeCells[i].y>-1)&&(activeCells[i].y<NUM_COLS)){
+            document.getElementById(activeCells[i].toString()).style.backgroundColor = "lightblue"; 
+        }
         i++;
     }
 }
@@ -60,17 +61,20 @@ function btnRunToggle(){
 
     else{
         gameRunning = 0;
+        activeCells.length = 0;
         document.getElementById("startBtn").innerHTML = "Start";
         clearInterval(myInterval);
     }
 }
 
 function colourCell(cell){
-    if(document.getElementById(cell).style.backgroundColor != "lightblue"){
-        document.getElementById(cell).style.backgroundColor = "lightblue";
-    }
-    else{
-        document.getElementById(cell).style.backgroundColor = "white";
+    if(gameRunning == 0){
+        if(document.getElementById(cell).style.backgroundColor != "lightblue"){
+            document.getElementById(cell).style.backgroundColor = "lightblue";
+        }
+        else{
+            document.getElementById(cell).style.backgroundColor = "white";
+        }
     }
 
 }
