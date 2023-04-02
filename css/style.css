@@ -17,6 +17,7 @@ body{
 #header{
     display: flex;
 }
+
 #logo{
     width: auto;
     height: 6em;
@@ -62,17 +63,19 @@ body{
   @media only screen and (max-width: 600px) {
     #header{
         display:block;
+        text-align: center;
     }
-    #navbar{
-        margin: auto;
-        width: 100%;
-    }
+
     #navbar li{
         display: block;
         margin: auto;
+        text-align: center;
     }
     #navbar li a{
-        font-size: 2em;
+        font-size: 3em;
+    }
+    #logo{
+        margin: auto;
     }
   }
   
