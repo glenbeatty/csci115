@@ -1,0 +1,30 @@
+#graphicWrapper{
+    width: 100%;
+    border: 2px black solid;
+    padding: 0px;
+    display: flex;
+    background-color: purple;
+}
+
+#portrait{
+    object-fit: cover;
+    width: 100%;
+    height: auto;
+    border-right: 2px black solid;
+}
+
+#portraitCaption{
+    color: white;
+    margin: 1em;
+}
+
+#portraitCaption a{
+    color: red;
+}
+@media only screen and (max-width: 600px) {
+
+    #graphicWrapper{
+        display: block;
+    }
+  }
+  

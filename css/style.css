@@ -1,0 +1,78 @@
+body{
+    background-color: lightblue;
+    margin: 10px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+#container{
+    background-color: white;
+    width: 65%;
+    height: 100%;
+    margin: auto;
+    padding: 10px;
+    border: 1px darkslateblue solid;
+    border-radius: 5px;
+}
+
+#header{
+    display: flex;
+}
+#logo{
+    width: auto;
+    height: 6em;
+    border: 2px black solid;
+    border-radius: 5px;
+    background-color: purple;
+    display: inline-block;
+}
+
+#navbar {
+    background-color: none;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+#navbar li{
+    display: inline-block;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+#navbar li a{
+    font-size: 1.3em;
+    color: purple;
+    text-decoration-line: none;
+    font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+#navbar li a:hover{
+    color: skyblue;
+    text-decoration-line: underline;
+}
+@media only screen and (max-width: 1200px) {
+    #container{
+        width:80%;
+    }
+  }
+@media only screen and (max-width: 1000px) {
+    #container{
+        width:96%;
+        margin: 0px;
+    }
+  }
+
+  @media only screen and (max-width: 600px) {
+    #header{
+        display:block;
+    }
+    #navbar{
+        margin: auto;
+        width: 100%;
+    }
+    #navbar li{
+        display: block;
+        margin: auto;
+    }
+    #navbar li a{
+        font-size: 2em;
+    }
+  }
+  
