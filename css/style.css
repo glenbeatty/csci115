@@ -27,6 +27,10 @@ body{
     display: inline-block;
 }
 
+#logo:hover{
+    background-color: red;
+}
+
 #navbar {
     background-color: none;
     margin-top: auto;
@@ -44,10 +48,12 @@ body{
     text-decoration-line: none;
     font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 }
+
 #navbar li a:hover{
-    color: skyblue;
+    color: red;
     text-decoration-line: underline;
 }
+
 @media only screen and (max-width: 1200px) {
     #container{
         width:80%;

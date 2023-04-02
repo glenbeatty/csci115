@@ -1,0 +1,23 @@
+#contentWrapper{
+    width:100%;
+}
+
+h1, h2, h3{
+    color: purple;
+}
+p{
+    font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 1.2em;
+}
+a{
+    color: red;
+}
+table{
+    border-collapse: collapse;
+    padding: 4px;
+
+}
+td{
+    border: 1px black solid;
+    padding: 4px;
+}
